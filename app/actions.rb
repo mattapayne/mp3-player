@@ -7,5 +7,6 @@ end
 
 get '/api/v1/music' do
   content_type :json
-  Song.first.to_json
+  @song = Song.first
+  @song.to_json
 end
