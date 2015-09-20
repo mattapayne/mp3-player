@@ -1,0 +1,12 @@
+<div class="audio-player">
+  <audio>
+    Your browser does not support the audio element.
+  </audio>
+  <a class="play-btn">Play</a>
+  <a class="stop-btn">Stop</a>
+  <div class="progress"></div>
+</div>
+
+<% content_for :js do %>
+  <script src="/javascript/player.js"></script>
+<% end %>
